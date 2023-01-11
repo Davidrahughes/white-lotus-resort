@@ -1,5 +1,5 @@
 // App.js
-import firebase from "./components/firebase";
+// import firebase from "./components/firebase";
 import Hotels from "./components/Hotels";
 import Header from "./components/Header";
 

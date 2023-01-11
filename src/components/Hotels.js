@@ -1,11 +1,11 @@
 // // App.js
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 // to access our database, we must import the corresponding firebase modules
 import firebase from "./firebase";
 import { getDatabase, ref, onValue } from "firebase/database";
 
 function Hotels() {
-  const [hotels, setHotels] = useState([]);
+  //   const [hotels, setHotels] = useState([]);
 
   useEffect(() => {
     // create a variable that holds our database details
