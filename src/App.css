@@ -33,7 +33,7 @@ h2 {
 
 .navigation a {
   font-family: 'trajan-pro-bold', sans-serif;;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 30px;
   color: #282c34;
   text-decoration: none;
@@ -49,7 +49,7 @@ h2 {
 
 .suiteList li {
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: uppercase;
   list-style-type: none;
   color: whitesmoke;
   opacity: 0.9;
