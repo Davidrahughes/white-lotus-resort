@@ -4,7 +4,8 @@ import firebase from "./firebase";
 import { getDatabase, ref, onValue } from "firebase/database";
 import Header from "./Header";
 import React from "react";
-const LibraryHotel = () => {
+const Library = () => {
+  // Create useState for hotls and suites for BOTH locations
   const [arrayOfHotels, setArrayOfHotels] = useState([]);
   const [arrayOfHawaiiSuites, setArrayOfHawaiiSuites] = useState([]);
   const [arrayOfSicilySuites, setArrayOfSicilySuites] = useState([]);
@@ -23,17 +24,15 @@ const LibraryHotel = () => {
       const dbValue = dbRresponse.val();
 
       const arrayOfHotels = [];
-      // console.log("hotels", arrayOfHotels);
 
       const arrayOfHawaiiSuites = [];
 
       const arrayOfSicilySuites = [];
 
+      // for loop through hotel, and both suites to grab the correct object using .push
       for (let propertyKey in dbValue) {
         arrayOfHotels.push({
           title: dbValue[propertyKey].location,
-          suiteH: dbValue[propertyKey].suiteH,
-          suiteS: dbValue[propertyKey].suiteS,
         });
       }
 
@@ -48,6 +47,7 @@ const LibraryHotel = () => {
           suiteH: dbValue["White Lotus Sicily"].suiteS[suiteKey],
         });
       }
+      // set the arrays for each and then console log to confirm
       setArrayOfHotels(arrayOfHotels);
       setArrayOfHawaiiSuites(arrayOfHawaiiSuites);
       setArrayOfSicilySuites(arrayOfSicilySuites);
@@ -58,6 +58,7 @@ const LibraryHotel = () => {
   }, []);
 
   return (
+    // return the arrays so they can be sent to the Header
     <div>
       <Header
         hotels={arrayOfHotels}
@@ -68,4 +69,4 @@ const LibraryHotel = () => {
   );
 };
 
-export default LibraryHotel;
+export default Library;

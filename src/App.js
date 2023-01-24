@@ -1,13 +1,12 @@
-// App.js
-import LibraryHotel from "./components/LibraryHotel";
+import Library from "./components/Library";
 import React from "react";
+// import App.css
 import "./App.css";
-// import Hotels from "./components/Hotels";
 
 function App() {
   return (
     <>
-      <LibraryHotel />
+      <Library />
     </>
   );
 }

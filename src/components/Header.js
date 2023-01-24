@@ -5,18 +5,25 @@ import Sicily from "./Sicily";
 import Home from "./Home";
 
 const Header = ({ hotels, hawaiiSuites, sicilySuites }) => {
-  console.log(hotels);
-  console.log(hawaiiSuites);
-  console.log(sicilySuites);
+  // console.log(hotels);
+  // console.log(hawaiiSuites);
+  // console.log(sicilySuites);
+
+  // Pass hawaiiSuites, sicilySuites and hotels from Library
 
   return (
     <header>
       <section>
         <nav>
           <ul className="navigation">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            {/* Map through hotels to create lis */}
             {hotels.map((hotel) => {
               return (
                 <li>
+                  {/* Use dot nataion to pass the title of the hotel through to create the Link */}
                   <Link
                     to={`/${hotel.title}`}
                   >{`Welcome to ${hotel.title}`}</Link>
@@ -25,16 +32,8 @@ const Header = ({ hotels, hawaiiSuites, sicilySuites }) => {
             })}
           </ul>
         </nav>
-        {/* <section>
-          <ul className="suiteList">
-            {hotels.map((suite) => {
-              return <li>{`${suite.suite1}`}</li>;
-            })}
-          </ul>
-        </section> */}
       </section>
       <Routes>
-        {/* <Route path="/" element={<h1>Welcome!</h1>} /> */}
         <Route
           path="/hawaii"
           element={<Hawaii hawaiiSuites={hawaiiSuites} />}

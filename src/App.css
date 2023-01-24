@@ -5,16 +5,13 @@
   src: url('https://www.dafontfree.net/embed/dHJhamFuLXByby1ib2xkJmRhdGEvMTMvdC82NTQ1Ni9UcmFqYW5Qcm8tQm9sZC5vdGY" rel="stylesheet" type="text/css');
 }
 
-/* header {
-  min-height: 100vh;
-  min-width: 100vw;
-  background-image: url(./assets/wallpaper23.png);
-  background-size: cover;
-} */
-
 nav {
   display: flex;
   justify-content: center;
+}
+
+h2 {
+  text-align: center;
 }
 
 .navigation {
@@ -42,22 +39,79 @@ nav {
   text-decoration: none;
 }
 
-.hawaii {
+.suiteList {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  margin:  0 auto;
+  padding: 175px 0 0 0;
+}
+
+.suiteList li {
+  text-decoration: none;
+  text-transform: capitalize;
+  list-style-type: none;
+  color: whitesmoke;
+  opacity: 0.9;
+  width: max-content;
+  font-size: 50px;
+  font-family: 'trajan-pro-bold';
 }
 
 .hawaii img {
   display: block;
-  width: 1432px;
-  height: 800px;
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
   background-image: url(./assets/hawaii1.png);
   background-repeat: no-repeat;
   background-size: cover;
   alt: "wall paper of a leopard asleep on a leaf";
 }
 
+.sicily {
+  background-image: url(./assets/sicily1.png);
+}
+
+.hawaii {
+  background-image: url(./assets/hawaii1.png);
+}
+
+.hawaii, .sicily {
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+  height: 1000px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.home img {
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+  background-image: url(./assets/home1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  alt: "white lotus hotel welcome screen";
+}
+
+.sicily img {
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+  background-image: url(./assets/sicily1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  alt: "baroque painting";
+}
+
 .homePage {
   text-align: center;
+}
+
+.suiteList {
+
 }

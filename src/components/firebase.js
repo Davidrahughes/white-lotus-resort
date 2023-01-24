@@ -15,42 +15,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const firebase = initializeApp(firebaseConfig);
-// const database = getDatabase();
-
-// function writeData(hotelId, hotelName, suiteName) {
-//   const db = getDatabase();
-
-//   const reference = ref(db, "hotel" + hotelId);
-
-//   set(reference, {
-//     hotel: hotelName,
-//     suites: suiteName,
-//   });
-// }
-
-// writeData("Sicily", "White Lotus Sicily", "Berlitz");
-
-// writeData("Hawaii", "White Lotus Hawaii", "Gardenia");
-
-//   set(reference, {
-//     hotel: hotelName,
-//     suites: [],
-//   });
-//   suites.forEach((suite) => {
-//     reference.child("suites").push(suite);
-//   });
-// }
-
-// writeData("Sicily", "White Lotus Sicily", [
-//   { name: "Berlitz ", price: 600 },
-//   { name: "Perennial ", price: 800 },
-//   { name: "Pomelia", price: 1000 },
-// ]);
-
-// writeData("Hawaii", "White Lotus Hawaii", [
-//   { name: "Gardenia ", price: 600 },
-//   { name: "Hibiscus ", price: 800 },
-//   { name: "Orchid", price: 1000 },
-// ]);
 
 export default firebase;
