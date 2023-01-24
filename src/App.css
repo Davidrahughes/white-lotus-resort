@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import url('https://www.dafontfree.net/embed/dHJhamFuLXByby1ib2xkJmRhdGEvMTMvdC82NTQ1Ni9UcmFqYW5Qcm8tQm9sZC5vdGY" rel="stylesheet" type="text/css');
+
+@font-face {
+  font-family:'trajan-pro-bold', sans-serif;;
+  src: url('https://www.dafontfree.net/embed/dHJhamFuLXByby1ib2xkJmRhdGEvMTMvdC82NTQ1Ni9UcmFqYW5Qcm8tQm9sZC5vdGY" rel="stylesheet" type="text/css');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* header {
   min-height: 100vh;
+  min-width: 100vw;
+  background-image: url(./assets/wallpaper23.png);
+  background-size: cover;
+} */
+
+nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigation li {
+  padding: 0 20px;
+  margin: 10 20px;
+  display: inline-block;
+}
+
+.navigation a {
+  font-family: 'trajan-pro-bold';
+  text-transform: capitalize;
+  font-size: 30px;
+  color: #282c34;
+  text-decoration: none;
+}
+
+.hawaii {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hawaii img {
+  display: block;
+  width: 1432px;
+  height: 800px;
+  background-image: url(./assets/hawaii1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  alt: "wall paper of a leopard asleep on a leaf";
+}
+
+.homePage {
+  text-align: center;
 }
