@@ -1,7 +1,7 @@
 @import url('https://www.dafontfree.net/embed/dHJhamFuLXByby1ib2xkJmRhdGEvMTMvdC82NTQ1Ni9UcmFqYW5Qcm8tQm9sZC5vdGY" rel="stylesheet" type="text/css');
 
 @font-face {
-  font-family:'trajan-pro-bold', sans-serif;;
+  font-family:'trajan-pro-bold';
   src: url('https://www.dafontfree.net/embed/dHJhamFuLXByby1ib2xkJmRhdGEvMTMvdC82NTQ1Ni9UcmFqYW5Qcm8tQm9sZC5vdGY" rel="stylesheet" type="text/css');
 }
 
@@ -32,7 +32,7 @@ h2 {
 }
 
 .navigation a {
-  font-family: 'trajan-pro-bold';
+  font-family: 'trajan-pro-bold', sans-serif;;
   text-transform: capitalize;
   font-size: 30px;
   color: #282c34;
@@ -55,7 +55,7 @@ h2 {
   opacity: 0.9;
   width: max-content;
   font-size: 50px;
-  font-family: 'trajan-pro-bold';
+  font-family: 'trajan-pro-bold', sans-serif;;
 }
 
 .hawaii img {
@@ -110,8 +110,4 @@ h2 {
 
 .homePage {
   text-align: center;
-}
-
-.suiteList {
-
 }
