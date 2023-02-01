@@ -4,11 +4,7 @@ import React from "react";
 import Sicily from "./Sicily";
 import Home from "./Home";
 
-const Header = ({ hotels, hawaiiSuites, sicilySuites }) => {
-  // console.log(hotels);
-  // console.log(hawaiiSuites);
-  // console.log(sicilySuites);
-
+const Header = ({ hotels, hawaiiSuites, sicilySuites, updateBooking }) => {
   // Pass hawaiiSuites, sicilySuites and hotels from Library
 
   return (
@@ -20,9 +16,9 @@ const Header = ({ hotels, hawaiiSuites, sicilySuites }) => {
               <Link to="/">Home</Link>
             </li>
             {/* Map through hotels to create lis */}
-            {hotels.map((hotel) => {
+            {hotels.map((hotel, index) => {
               return (
-                <li>
+                <li key={hotel.id || index}>
                   {/* Use dot nataion to pass the title of the hotel through to create the Link */}
                   <Link
                     to={`/${hotel.title}`}
@@ -35,12 +31,16 @@ const Header = ({ hotels, hawaiiSuites, sicilySuites }) => {
       </section>
       <Routes>
         <Route
-          path="/hawaii"
-          element={<Hawaii hawaiiSuites={hawaiiSuites} />}
+          path="/hawaii/*"
+          element={
+            <Hawaii hawaiiSuites={hawaiiSuites} updateBooking={updateBooking} />
+          }
         />
         <Route
-          path="/sicily"
-          element={<Sicily sicilySuites={sicilySuites} />}
+          path="/sicily/*"
+          element={
+            <Sicily sicilySuites={sicilySuites} updateBooking={updateBooking} />
+          }
         />
         <Route path="/" element={<Home />} />
       </Routes>
